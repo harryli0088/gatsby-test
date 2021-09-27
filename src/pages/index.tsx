@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import BlankAnchor from "../Components/BlankAnchor"
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
 
@@ -59,6 +60,18 @@ const IndexPage = () => {
             <li>Static site generation</li>
             <li>Build process</li>
             <li>Images</li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Useful Documentation:</p>
+
+          <ul>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/tutorial/part-0/">CLI Set Up</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/quick-start/">Getting Started</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/">TypeScript</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/styling/global-css/">Global CSS</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/">Deploying a Gatsby App to GitHub Pages</BlankAnchor></li>
           </ul>
         </div>
       </section>

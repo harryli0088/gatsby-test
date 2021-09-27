@@ -1,52 +1,50 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import { StaticImage } from "gatsby-plugin-image"
+import Header from "../Components/Header"
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
+    <main>
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+      <Header><h1>Page not found</h1></Header>
+      
+      <section>
+        <p>
+          Sorry{" "}
+          <span role="img" aria-label="Pensive emoji">
+            😔
+          </span>{" "}
+          we couldn’t find what you were looking for.
+          <br />
+          <br />
+          <Link to="/"><h3>Go home</h3></Link>
+        </p>
+
+        <div>
+          <Link to="/cats"><h3>Cats</h3></Link>
+          <Link to="/cats">
+            <StaticImage src="../images/ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg" alt="sleeping cat"/>
+          </Link>
+          <div>
+            Photo by <a href="https://unsplash.com/@ludemeula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ludemeula Fernandes</a> on <a href="https://unsplash.com/s/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div>
+          <a href="./dogs"><h3>Dogs</h3></a>
+          <a href="./dogs">
+            <StaticImage src="../images/david-moynihan-BT_QM4CpnNE-unsplash.jpg" alt="golden"/>
+          </a>
+          <div>
+            Photo by <a href="https://unsplash.com/@slowbiker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Moynihan</a> on <a href="https://unsplash.com/s/photos/golden-retriever?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
