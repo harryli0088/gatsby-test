@@ -73,6 +73,7 @@ const IndexPage = () => {
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/quick-start/">Getting Started</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/">TypeScript</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/styling/global-css/">Global CSS</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/">Robots.txt</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/">Deploying a Gatsby App to GitHub Pages</BlankAnchor></li>
           </ul>
         </div>
