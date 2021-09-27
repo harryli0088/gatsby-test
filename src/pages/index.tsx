@@ -16,8 +16,8 @@ const IndexPage = () => {
 
       <section>
         <div>
-          <a href="/cats"><h3>Cats</h3></a>
-          <a href="/cats">
+          <a href="./cats"><h3>Cats</h3></a>
+          <a href="./cats">
             <StaticImage src="../images/ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg" alt="sleeping cat"/>
           </a>
           <div>
@@ -29,8 +29,8 @@ const IndexPage = () => {
         <br/>
 
         <div>
-          <a href="/dogs"><h3>Dogs</h3></a>
-          <a href="/dogs">
+          <a href="./dogs"><h3>Dogs</h3></a>
+          <a href="./dogs">
             <StaticImage src="../images/david-moynihan-BT_QM4CpnNE-unsplash.jpg" alt="golden"/>
           </a>
           <div>
