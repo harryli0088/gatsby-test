@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #555;
+}
+
+header, section, footer {
+  padding: 1em;
+
+  @media only screen and (min-width: 600px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    padding-left: calc(50vw - 400px);
+    padding-right: calc(50vw - 400px);
+  }
+}
+
+a {
+  color: #AED6F1;
+  &:visited {
+    color: #D2B4DE;
+  }
+}
