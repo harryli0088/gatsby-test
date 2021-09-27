@@ -36,10 +36,10 @@ const NotFoundPage = () => {
         <br/>
 
         <div>
-          <a href="./dogs"><h3>Dogs</h3></a>
-          <a href="./dogs">
+          <Link to="/dogs"><h3>Dogs</h3></Link>
+          <Link to="/dogs">
             <StaticImage src="../images/david-moynihan-BT_QM4CpnNE-unsplash.jpg" alt="golden"/>
-          </a>
+          </Link>
           <div>
             Photo by <a href="https://unsplash.com/@slowbiker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Moynihan</a> on <a href="https://unsplash.com/s/photos/golden-retriever?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </div>
