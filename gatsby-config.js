@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: "/gatsby-test",
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://harryli0088.github.io/gatsby-test/",
     title: "gatsby-test",
   },
   plugins: [
