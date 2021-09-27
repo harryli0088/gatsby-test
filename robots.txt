@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://harryli0088.github.io/gatsby-test/sitemap/sitemap-index.xml
+Host: https://harryli0088.github.io
