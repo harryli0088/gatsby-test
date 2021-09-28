@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import BlankAnchor from '../Components/BlankAnchor'
 import DefaultHelmet from '../Components/DefaultHelmet'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
@@ -10,6 +11,26 @@ import Header from '../Components/Header'
 import "../index.scss"
 
 const Cats = () => {
+  const [error, setError] = useState<string>("")
+  const [imgUrl, setImgUrl] = useState<string | null>(null)
+
+  const fetchImage = useCallback(async() => {
+    try {
+      setError("")
+      const result = await fetch(`https://api.thecatapi.com/v1/images/search?limit=1&order=RANDOM`, {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.CAT_API_KEY
+        }
+      })
+      setImgUrl((await result.json())[0].url)
+    }
+    catch(err) {
+      console.error(err)
+      setError(err.message)
+    }
+  }, [])
+
   return (
     <main>
       <DefaultHelmet/>
@@ -46,6 +67,20 @@ const Cats = () => {
           <StaticImage src="../images/ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg" alt="sleeping cat"/>
           <div>
             Photo by <a href="https://unsplash.com/@ludemeula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ludemeula Fernandes</a> on <a href="https://unsplash.com/s/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+        </div>
+
+
+        <br/>
+        <br/>
+
+        <div>
+          <div><button onClick={fetchImage}>Get a Random Cat Image</button></div>
+          {error && <div>{error}</div>}
+          <br/>
+          {imgUrl && <img src={imgUrl} alt="random cat" style={{width: "100%"}}/>}
+          <div>
+            Via <BlankAnchor href="https://thecatapi.com/">Cat API</BlankAnchor>
           </div>
         </div>
       </section>
