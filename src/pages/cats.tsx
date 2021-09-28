@@ -1,7 +1,9 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import DefaultHelmet from '../Components/DefaultHelmet'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 
@@ -10,6 +12,11 @@ import "../index.scss"
 const Cats = () => {
   return (
     <main>
+      <DefaultHelmet/>
+      <Helmet>
+        <title>Gatsby Test Site - Cats</title>
+      </Helmet>
+
       <Header>
         <h2>Cats | <Link to="/"><StaticImage className="interact" src="../images/home-solid.svg" alt="Home" height={26}/></Link></h2>
       </Header>

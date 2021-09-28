@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import BlankAnchor from "../Components/BlankAnchor"
+import DefaultHelmet from "../Components/DefaultHelmet"
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
 
@@ -11,7 +12,7 @@ import "../index.scss"
 const IndexPage = () => {
   return (
     <main>
-      <title>Home Page</title>
+      <DefaultHelmet/>
       
       <Header>
         <h1>Gatsby Test Site <span role="img" aria-label="Party popper emoji">🎉</span></h1>
@@ -64,15 +65,6 @@ const IndexPage = () => {
         </div>
 
         <div>
-          <p>TODO</p>
-
-          <ul>
-            <li>HTML meta header tags</li>
-            <li>screenshot, og:image</li>
-          </ul>
-        </div>
-
-        <div>
           <p>Useful Documentation:</p>
 
           <ul>
@@ -83,6 +75,7 @@ const IndexPage = () => {
             <li><BlankAnchor href="https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/">Robots.txt</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/">Deploying a Gatsby App to GitHub Pages</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/testing/">Testing Guides</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/">Static Assets</BlankAnchor></li>
           </ul>
         </div>
       </section>
