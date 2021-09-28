@@ -43,25 +43,29 @@ const IndexPage = () => {
 
         <br/>
         <br/>
-        
-        
 
         <hr/>
 
         <br/>
 
-        <div><p>I made this site to test out Gatsby's developer experience and static site generation.</p></div>
-
-        <div>
-          <p>I wanted to explore Gatsby's:</p>
+        <div><p>I made this site to test out Gatsby's developer experience and static site generation, which both seem very good. In general I like Gatsby a lot and wished I had looked into it earlier. I will probably use Gatsby over create-react-app from now on. Specifically, here are the things I like:</p>
 
           <ul>
-            <li>CLI</li>
-            <li>Routing</li>
-            <li>TypeScript support</li>
-            <li>Static site generation</li>
-            <li>Build process</li>
-            <li>Images</li>
+            <li>The CLI was very easy to use</li>
+            <li>I like the static routing a lot from the pages/ directory. No more React Router shenanigans!</li>
+            <li>TypeScript support is built-in and was as easy as changing .js files to .tsx</li>
+            <li>The static site generation looks great. Gatsby even automatically generates a sitemap which is great. I'm looking forward to (hopefully) faster page loads and the SEO benefits</li>
+            <li>The build processes seems fairly straightforward and I was easily able to deploy to GitHub Pages</li>
+            <li>I love the Gatsby images component. It handles conversion to webp, multiple image sizes, and picture tag for me.</li>
+            <li>Testing was easy to set up</li>
+          </ul>
+        </div>
+
+        <div>
+          <p>TODO</p>
+
+          <ul>
+            <li>HTML meta header tags</li>
           </ul>
         </div>
 
@@ -75,6 +79,7 @@ const IndexPage = () => {
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/styling/global-css/">Global CSS</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/">Robots.txt</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/">Deploying a Gatsby App to GitHub Pages</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/testing/">Testing Guides</BlankAnchor></li>
           </ul>
         </div>
       </section>
