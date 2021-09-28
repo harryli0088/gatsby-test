@@ -27,3 +27,11 @@ a {
     color: #D2B4DE;
   }
 }
+
+.interact {
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

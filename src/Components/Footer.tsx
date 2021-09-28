@@ -13,7 +13,9 @@ const Footer = () => {
       <br/>
       <br/>
       <footer style={footerStyle}>
-        <div>This site was made with <BlankAnchor href="https://reactjs.org/">React</BlankAnchor>, <BlankAnchor href="https://www.typescriptlang.org/">TypeScript</BlankAnchor>, and <BlankAnchor href="https://www.gatsbyjs.com/">Gatbsy</BlankAnchor>.</div>
+        <div>This site was made with <BlankAnchor href="https://reactjs.org/">React</BlankAnchor>, <BlankAnchor href="https://www.typescriptlang.org/">TypeScript</BlankAnchor>, <BlankAnchor href="https://fontawesome.com/license">FontAwesome</BlankAnchor>, and <BlankAnchor href="https://www.gatsbyjs.com/">Gatbsy</BlankAnchor>.</div>
+        <br/>
+        <div><BlankAnchor href="https://github.com/harryli0088/gatsby-test">GitHub Repo</BlankAnchor></div>
       </footer>
     </React.Fragment>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import Footer from '../Components/Footer'
@@ -10,7 +11,7 @@ const Cats = () => {
   return (
     <main>
       <Header>
-        <h2>Cats</h2>
+        <h2>Cats | <Link to="/"><StaticImage className="interact" src="../images/home-solid.svg" alt="Home" height={26}/></Link></h2>
       </Header>
 
       <section>

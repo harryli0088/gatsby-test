@@ -15,6 +15,8 @@ const IndexPage = () => {
       
       <Header>
         <h1>Gatsby Test Site <span role="img" aria-label="Party popper emoji">🎉</span></h1>
+
+        <BlankAnchor href="https://github.com/harryli0088/gatsby-test"><StaticImage className="interact" src="../images/github-brands.svg" alt="GitHub logo" height={30}/></BlankAnchor>
       </Header>
 
       <section>
@@ -66,6 +68,7 @@ const IndexPage = () => {
 
           <ul>
             <li>HTML meta header tags</li>
+            <li>screenshot, og:image</li>
           </ul>
         </div>
 
