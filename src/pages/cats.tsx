@@ -47,6 +47,9 @@ const Cats = () => {
         <Counter/>
 
         <hr/>
+
+        <p>This section tests Gatsby's <BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/">StaticImage</BlankAnchor> component.</p>
+
         <br/>
         <div>
           <StaticImage src="../images/kari-shea-eMzblc6JmXM-unsplash.jpg" alt="chair cat"/>
@@ -75,9 +78,10 @@ const Cats = () => {
           </div>
         </div>
 
+        <br/>
+        <hr/>
 
-        <br/>
-        <br/>
+        <p>This section tests dynamically generated content from user interactions.</p>
 
         <div>
           <div><button onClick={fetchImage}>Get a Random Cat Image</button></div>

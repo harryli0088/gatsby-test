@@ -42,6 +42,9 @@ const Dogs = () => {
         <Counter/>
 
         <hr/>
+
+        <p>This section tests Gatsby's <BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/">StaticImage</BlankAnchor> component.</p>
+
         <br/>
         <div>
           <StaticImage src="../images/lui-peng-ybHtKz5He9Y-unsplash.jpg" alt="beautiful dog"/>
@@ -71,8 +74,11 @@ const Dogs = () => {
         </div>
 
         <br/>
-        <br/>
 
+        <hr/>
+
+        <p>This section tests dynamically generated content from user interactions.</p>
+    
         <div>
           <div><button onClick={fetchImage}>Get a Random Dog Image</button></div>
           {error && <div>{error}</div>}
