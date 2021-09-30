@@ -1,8 +1,9 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import BlankAnchor from "../Components/BlankAnchor"
+import Counter from "../Components/Counter"
 import DefaultHelmet from "../Components/DefaultHelmet"
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
@@ -21,6 +22,10 @@ const IndexPage = () => {
       </Header>
 
       <section>
+        <Counter/>
+
+        <hr/>
+        
         <div>
           <Link to="/cats"><h3>Cats</h3></Link>
           <Link to="/cats">
@@ -43,9 +48,6 @@ const IndexPage = () => {
             Photo by <a href="https://unsplash.com/@slowbiker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Moynihan</a> on <a href="https://unsplash.com/s/photos/golden-retriever?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </div>
         </div>
-
-        <br/>
-        <br/>
 
         <hr/>
 
@@ -72,6 +74,7 @@ const IndexPage = () => {
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/quick-start/">Getting Started</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/">TypeScript</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/styling/global-css/">Global CSS</BlankAnchor></li>
+            <li><BlankAnchor href="https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement">wrapPageElement for persistent providers for Redux or Recoil</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/">Robots.txt</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/">Deploying a Gatsby App to GitHub Pages</BlankAnchor></li>
             <li><BlankAnchor href="https://www.gatsbyjs.com/docs/how-to/testing/">Testing Guides</BlankAnchor></li>

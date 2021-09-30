@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import BlankAnchor from '../Components/BlankAnchor'
+import Counter from '../Components/Counter'
 import DefaultHelmet from '../Components/DefaultHelmet'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
@@ -43,6 +44,10 @@ const Cats = () => {
       </Header>
 
       <section>
+        <Counter/>
+
+        <hr/>
+        <br/>
         <div>
           <StaticImage src="../images/kari-shea-eMzblc6JmXM-unsplash.jpg" alt="chair cat"/>
           <div>
